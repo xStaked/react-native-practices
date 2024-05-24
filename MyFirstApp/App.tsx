@@ -4,9 +4,14 @@ import {PaperProvider} from 'react-native-paper';
 // import {CounterScreeen} from './src/presentation/screens/CounterScreeen';
 import {CounterM3Screeen} from './src/presentation/screens/CounterM3Screeen';
 
+import IonIcon from 'react-native-vector-icons/Ionicons';
+
 export const App = () => {
   return (
-    <PaperProvider>
+    <PaperProvider
+      settings={{
+        icon: props => <IonIcon {...props} />,
+      }}>
       <SafeAreaView style={{flex: 1}}>
         {/* <HelloWordlScreen /> */}
         {/* <CounterScreeen /> */}
